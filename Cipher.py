@@ -85,5 +85,12 @@ pygame.init()
 display_width = 550
 display_height = 350
 display = pygame.display.set_mode((display_width,display_height))
-#Set text formats, position and background
+
+#Set text formats(font and color), position and background
+output_font = pygame.font.Font("Gamerock.otf", 30)
+output_text = output_font.render(ciphertext, True, (250,250,250))
+text_rect = output_text.get_rect()
+text_rect.center = (display_width//2, display_height//2)
+background = pygame.image.load("background.jpg")
+
 #Running the program in pygame
