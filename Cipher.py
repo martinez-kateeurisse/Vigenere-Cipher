@@ -67,7 +67,11 @@ for value in ciphertext_list:
     for key in letter_values:
         if letter_values[key] == value:
             ciphertext += key + ' '
-            
+
 #Print the cipher text as a string
+print("The ciphertext of the given message (" + message_input , ") and key (" + key_input , ") is:\n")
+#Printing instructions for output execution
+print("="*25,("Please click the pygame window to see the output"),"="*25)
+ciphertext = (ciphertext.replace(' ',''))
 
 #Display the input with the use of pygame
