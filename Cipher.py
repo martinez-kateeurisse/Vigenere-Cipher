@@ -21,8 +21,13 @@ for i in message_input:
     message_value = letter_values.get(i)
     #Append the value to a list
     message_list.append(message_value)
-#Print the list of values
-
+#Print the list of values (depending on user)
+message_reveal = input("Do you want to see the equivalent value of your message?(Type 'y' if yes, any key if no): ").lower()
+if message_reveal == 'y':
+    print("The values of the characters in your message are " + str(message_list))
+    print("="*100)
+else:
+    print("="*100)
 #Ask the user for the key
     #Iterate over the user's input 
     #Get the values of each character in the dictionary
