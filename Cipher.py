@@ -28,7 +28,9 @@ if message_reveal == 'y':
     print("="*100)
 else:
     print("="*100)
+
 #Ask the user for the key
+key_input = str(input("Please enter the key (all uppercase letters): ")).upper()
     #Iterate over the user's input 
     #Get the values of each character in the dictionary
     #Append the value to a list
