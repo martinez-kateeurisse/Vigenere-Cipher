@@ -61,8 +61,13 @@ if key_reveal == 'y':
 else:
     print("="*100)
 
-#Convert the keys into their corresponding values in the dictionary
-
+#Convert the values into their corresponding keys in the dictionary through iteration
+ciphertext = '' #initializing ciphertext
+for value in ciphertext_list:
+    for key in letter_values:
+        if letter_values[key] == value:
+            ciphertext += key + ' '
+            
 #Print the cipher text as a string
 
 #Display the input with the use of pygame
