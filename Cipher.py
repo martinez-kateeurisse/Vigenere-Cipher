@@ -51,6 +51,9 @@ while len(key_list) < len(message_list):
 key_list = key_list[:len(message_list)]
 
 #Add the values of the message and key and get their mod 26
+for i in range(0, len(message_list)):
+    ciphertext_list.append((message_list[i] + key_list[i]) % 26)
+    
 #Convert the keys into their corresponding values in the dictionary
 
 #Print the cipher text as a string
