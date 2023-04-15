@@ -3,6 +3,11 @@
 #PROBLEM 3 - The Vigenère Cipher  
 #A program that asks the user for the plaintext and the keyword and produce the ciphertext using the Vigenère cipher. 
 
+#Importing color modules
+import colorama
+from colorama import Back, Fore, Style 
+colorama.init(autoreset = True)
+
 #Create a dictionary for the keys and values
 letter_values = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9,
         'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19,
