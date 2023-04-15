@@ -94,3 +94,14 @@ text_rect.center = (display_width//2, display_height//2)
 background = pygame.image.load("background.jpg")
 
 #Running the program in pygame
+#Using a loop to run the program
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+    display.fill((0,0,0))
+    display.blit(background, (0,0))
+    display.blit(output_text, text_rect)
+    pygame.display.update()
+#The output of the program will be displayed in the pygame window
