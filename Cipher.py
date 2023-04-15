@@ -75,3 +75,7 @@ print("="*25,("Please click the pygame window to see the output"),"="*25)
 ciphertext = (ciphertext.replace(' ',''))
 
 #Display the input with the use of pygame
+#Importing modules
+#Initializing variables
+#Set text formats, position and background
+#Running the program in pygame
