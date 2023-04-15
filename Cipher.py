@@ -46,6 +46,10 @@ else:
     print("="*100)
 
 #Repeat the values of the key until it matches the lenght of the message
+while len(key_list) < len(message_list):
+    key_list += key_list
+key_list = key_list[:len(message_list)]
+
 #Add the values of the message and key and get their mod 26
 #Convert the keys into their corresponding values in the dictionary
 
