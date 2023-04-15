@@ -31,8 +31,10 @@ else:
 
 #Ask the user for the key
 key_input = str(input("Please enter the key (all uppercase letters): ")).upper()
-    #Iterate over the user's input 
+#Iterate over the user's input 
+for i in key_input:
     #Get the values of each character in the dictionary
+    key_value = letter_values.get(i)
     #Append the value to a list
 #Print the list of values
 
