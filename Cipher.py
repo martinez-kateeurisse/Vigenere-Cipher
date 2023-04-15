@@ -37,7 +37,13 @@ for i in key_input:
     key_value = letter_values.get(i)
     #Append the value to a list
     key_list.append(key_value)
-#Print the list of values
+#Print the list of values (depending on user)
+key_reveal = input("Do you want to see the equivalent value of your key?(Type 'y' if yes, any key if no): ").lower()
+if key_reveal == 'y':
+    print("The values of the characters in your key are " + str(key_list))
+    print("="*100)
+else:
+    print("="*100)
 
 #Repeat the values of the key until it matches the lenght of the message
 #Add the values of the message and key and get their mod 26
