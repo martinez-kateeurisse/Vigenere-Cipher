@@ -19,7 +19,8 @@ key_list = []
 ciphertext_list = []
 
 #Ask the user for the message
-message_input = str(input("Please enter the message (all uppercase letters, no spaces): ")).upper()
+message_input = str(input(f"{Fore.LIGHTRED_EX} Please enter the message (all uppercase letters, no spaces): "+ Fore.RESET)).upper()
+
 #Iterate over the user's input
 for i in message_input:
     #Get the values of each character in the dictionary
@@ -27,15 +28,15 @@ for i in message_input:
     #Append the value to a list
     message_list.append(message_value)
 #Print the list of values (depending on user)
-message_reveal = input("Do you want to see the equivalent value of your message?(Type 'y' if yes, any key if no): ").lower()
+message_reveal = input(f"{Fore.LIGHTGREEN_EX} Do you want to see the equivalent value of your message?(Type 'y' if yes, any key if no): " + Fore.RESET).lower()
 if message_reveal == 'y':
-    print("The values of the characters in your message are " + str(message_list))
-    print("="*100)
+    print(f"{Fore.LIGHTWHITE_EX} The values of the characters in your message are " + str(message_list))
+    print(f"{Fore.LIGHTBLACK_EX}="*100)
 else:
-    print("="*100)
+    print(f"{Fore.LIGHTBLACK_EX}="*100)
 
 #Ask the user for the key
-key_input = str(input("Please enter the key (all uppercase letters): ")).upper()
+key_input = str(input(f"{Fore.LIGHTRED_EX} Please enter the key (all uppercase letters): " + Fore.RESET)).upper()
 #Iterate over the user's input 
 for i in key_input:
     #Get the values of each character in the dictionary
@@ -43,12 +44,12 @@ for i in key_input:
     #Append the value to a list
     key_list.append(key_value)
 #Print the list of values (depending on user)
-key_reveal = input("Do you want to see the equivalent value of your key?(Type 'y' if yes, any key if no): ").lower()
+key_reveal = input(f"{Fore.LIGHTGREEN_EX} Do you want to see the equivalent value of your key?(Type 'y' if yes, any key if no): " + Fore.RESET).lower()
 if key_reveal == 'y':
-    print("The values of the characters in your key are " + str(key_list))
-    print("="*100)
+    print(f"{Fore.LIGHTWHITE_EX} The values of the characters in your key are " + str(key_list))
+    print(f"{Fore.LIGHTBLACK_EX}="*100)
 else:
-    print("="*100)
+    print(f"{Fore.LIGHTBLACK_EX}="*100)
 
 #Repeat the values of the key until it matches the lenght of the message
 while len(key_list) < len(message_list):
@@ -59,12 +60,12 @@ key_list = key_list[:len(message_list)]
 for i in range(0, len(message_list)):
     ciphertext_list.append((message_list[i] + key_list[i]) % 26)
 #Printing the values (depending on user)
-value_reveal = input("Do you want to see the numeric value of the cyphertext?(Type 'y' if yes, any key if no): ").lower()
+value_reveal = input(f"{Fore.LIGHTGREEN_EX} Do you want to see the numeric value of the cyphertext?(Type 'y' if yes, any key if no): " + Fore.RESET).lower()
 if key_reveal == 'y':
-    print("The values of the characters in the cyphertext are " + str(ciphertext_list))
-    print("="*100)
+    print(f"{Fore.LIGHTWHITE_EX} The values of the characters in the cyphertext are " + str(ciphertext_list))
+    print(f"{Fore.LIGHTBLACK_EX}="*100)
 else:
-    print("="*100)
+    print(f"{Fore.LIGHTBLACK_EX}="*100)
 
 #Convert the values into their corresponding keys in the dictionary through iteration
 ciphertext = '' #initializing ciphertext
@@ -74,9 +75,9 @@ for value in ciphertext_list:
             ciphertext += key + ' '
 
 #Print the cipher text as a string
-print("The ciphertext of the given message (" + message_input , ") and key (" + key_input , ") is:\n")
+print(f"{Fore.CYAN}The ciphertext of the given message (" + message_input , f"{Fore.CYAN}) and key (" + key_input , f"{Fore.CYAN}) is:\n")
 #Printing instructions for output execution
-print("="*25,("Please click the pygame window to see the output"),"="*25)
+print("="*25,(f"{Fore.LIGHTMAGENTA_EX}Please click the pygame window to see the output"),"="*25)
 ciphertext = (ciphertext.replace(' ',''))
 
 #Display the input with the use of pygame
