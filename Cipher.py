@@ -80,5 +80,10 @@ import pygame
 import sys
 
 #Initializing variables
+pygame.init()
+#Initializing display format(dimension)
+display_width = 550
+display_height = 350
+display = pygame.display.set_mode((display_width,display_height))
 #Set text formats, position and background
 #Running the program in pygame
