@@ -53,7 +53,14 @@ key_list = key_list[:len(message_list)]
 #Add the values of the message and key and get their mod 26
 for i in range(0, len(message_list)):
     ciphertext_list.append((message_list[i] + key_list[i]) % 26)
-    
+#Printing the values (depending on user)
+value_reveal = input("Do you want to see the numeric value of the cyphertext?(Type 'y' if yes, any key if no): ").lower()
+if key_reveal == 'y':
+    print("The values of the characters in the cyphertext are " + str(ciphertext_list))
+    print("="*100)
+else:
+    print("="*100)
+
 #Convert the keys into their corresponding values in the dictionary
 
 #Print the cipher text as a string
