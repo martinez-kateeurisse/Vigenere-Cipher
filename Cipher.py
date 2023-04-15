@@ -20,6 +20,7 @@ for i in message_input:
     #Get the values of each character in the dictionary
     message_value = letter_values.get(i)
     #Append the value to a list
+    message_list.append(message_value)
 #Print the list of values
 
 #Ask the user for the key
