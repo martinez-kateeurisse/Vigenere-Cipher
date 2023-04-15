@@ -14,6 +14,7 @@ key_list = []
 ciphertext_list = []
 
 #Ask the user for the message
+message_input = str(input("Please enter the message (all uppercase letters, no spaces): ")).upper()
     #Iterate over the user's input 
     #Get the values of each character in the dictionary
     #Append the value to a list
