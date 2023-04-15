@@ -29,4 +29,5 @@ Ciphertext: E M V C K H M W V R I L A W Y
 To smoothly run the program, install or download the following modules:
 - colorama (pip install colorama)
 - pygame (pip install pygame) 
+
 (easiest way to install is through pip)
