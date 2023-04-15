@@ -76,6 +76,9 @@ ciphertext = (ciphertext.replace(' ',''))
 
 #Display the input with the use of pygame
 #Importing modules
+import pygame
+import sys
+
 #Initializing variables
 #Set text formats, position and background
 #Running the program in pygame
