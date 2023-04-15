@@ -36,6 +36,7 @@ for i in key_input:
     #Get the values of each character in the dictionary
     key_value = letter_values.get(i)
     #Append the value to a list
+    key_list.append(key_value)
 #Print the list of values
 
 #Repeat the values of the key until it matches the lenght of the message
