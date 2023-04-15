@@ -9,6 +9,10 @@ letter_values = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7,
         'U': 20, 'V': 21, 'W': 22, 'X': 23, 'Y': 24, 'Z': 25}
 
 #Initialize lists
+message_list = []
+key_list = []
+ciphertext_list = []
+
 #Ask the user for the message
     #Iterate over the user's input 
     #Get the values of each character in the dictionary
