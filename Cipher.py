@@ -8,6 +8,7 @@ import colorama
 from colorama import Back, Fore, Style 
 colorama.init(autoreset = True)
 
+
 print(Fore.LIGHTYELLOW_EX, """ 
                                     ──▄▀▀▀▄───────────────
                                     ──█───█───────────────
@@ -18,6 +19,9 @@ print(Fore.LIGHTYELLOW_EX, """
               ░▒█▒█░ ▀█▀ █░▀█ █▀▀ █░░█ █▀▀ █▄▄▀ █▀▀ ▒█░░░ ▀█▀ █░░█ █▀▀█ █▀▀ █▄▄▀░ 
               ░░▀▄▀░ ▀▀▀ ▀▀▀▀ ▀▀▀ ▀░░▀ ▀▀▀ ▀░▀▀ ▀▀▀ ▒█▄▄█ ▀▀▀ █▀▀▀ ▀░░▀ ▀▀▀ ▀░▀▀ """)                                
 print(Fore.WHITE, " "*12 , "="* 29 + "PROBLEM 3" + "="* 29 ,"\n")
+
+#Initializing colorama autoreset
+colorama.init(autoreset = True)
 
 #Asking the user's name and printing a greeting
 print("//" * 20)
